@@ -1,9 +1,8 @@
 <p>These are your lists:</p>
 
 <ul>
-  <li><a href="/specific_list">Specific list</a></li>
-  <% @lists.each do |list| %>
-  <li><%= list %></li>
+  <% @lists.each_with_index do |list, index| %>
+  <li><%= link_to list, "/list/#{index}" %></li>
   <% end %>
   <li><a href="/new">Create a new list</a></li>
 </ul>
