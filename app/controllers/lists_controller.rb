@@ -18,4 +18,8 @@ class ListsController < ApplicationController
     redirect_to "/list/#{List.all.find_index(newlist)}"
   end
 
+  def update
+    render json: request.params
+  end
+
 end

@@ -4,4 +4,11 @@
   <% @list.items.each do |item| %>
   <li><%= item %></li>
   <% end %>
+  <li>
+    <form method="post">
+      <input type="hidden" name="_method" value="patch" />
+      <input type="text" name="item" placeholder="List item" />
+      <button type="submit">Add new item</button>
+    </form>
+  </li>
 </ol>

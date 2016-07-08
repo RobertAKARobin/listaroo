@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get "/list/:list_number", to: "lists#show"
   get "/new", to: "lists#new"
   post "/new", to: "lists#create"
+  patch "/list/:list_number", to: "lists#update"
 end
