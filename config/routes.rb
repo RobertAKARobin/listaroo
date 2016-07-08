@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: "lists#index"
   get "specific_list", to: "lists#show"
   get "/new", to: "lists#new"
+  post "/new", to: "lists#create"
 end

@@ -12,4 +12,8 @@ class ListsController < ApplicationController
 
   end
 
+  def create
+    render json: request.params
+  end
+
 end
