@@ -2,11 +2,12 @@ class List
 
   cattr_accessor :all
 
-  @@all = [
-    "List One",
-    "List Two",
-    "List Three",
-    "List Four"
-  ]
+  @@all = []
+
+  attr_accessor :title
+
+  def initialize(title)
+    @title = title
+  end
 
 end
