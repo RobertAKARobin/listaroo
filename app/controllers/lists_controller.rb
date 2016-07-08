@@ -13,7 +13,8 @@ class ListsController < ApplicationController
   end
 
   def create
-    render json: request.params
+    List.all.push(request.params[:title])
+    redirect_to "/"
   end
 
 end
