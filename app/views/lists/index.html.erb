@@ -2,4 +2,7 @@
 
 <ul>
   <li><a href="/specific_list">Specific list</a></li>
+  <% @lists.each do |list| %>
+  <li><%= list %></li>
+  <% end %>
 </ul>
