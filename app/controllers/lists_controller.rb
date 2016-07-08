@@ -14,8 +14,8 @@ class ListsController < ApplicationController
   end
 
   def create
-    List.all.push(List.new(request.params[:title]))
-    redirect_to "/"
+    newlist = List.new(request.params[:title])
+    redirect_to "/list/#{List.all.find_index(newlist)}"
   end
 
 end
