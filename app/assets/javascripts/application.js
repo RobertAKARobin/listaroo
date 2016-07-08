@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+console.log("I'm here, and so is jQuery version " + $().jquery + "!");
