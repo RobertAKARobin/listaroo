@@ -19,7 +19,10 @@ class ListsController < ApplicationController
   end
 
   def update
-    render json: request.params
+    index = request.params[:list_number].to_i
+    list = List.all[index]
+    list.items.push(request.params[:item])
+    redirect_to "/list/#{index}"
   end
 
 end

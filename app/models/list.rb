@@ -8,11 +8,7 @@ class List
 
   def initialize(title)
     @title = title
-    @items = [
-      "Thing A",
-      "Thing B",
-      "Thing C"
-    ]
+    @items = []
     @@all.push(self)
   end
 
